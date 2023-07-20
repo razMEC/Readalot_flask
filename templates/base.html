@@ -1,0 +1,14 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset = "UTF-8"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename=   'css/style.css') }}">
+    {% block head %}{% endblock %}
+</head>
+
+<body >
+    <img class='background' src="{{ url_for('static', filename= 'Bookpic2.jpg') }}" alt="Did not work bro">
+    {% block body %}{% endblock %}
+</body>
+
+</html>

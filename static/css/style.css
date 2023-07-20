@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
+/* global styles */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+    .input-field {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+img.background {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -3;
+      width: 100%;
+      height: 200%;
+      -webkit-filter: blur(6px); /* Safari 6.0 - 9.0 */
+      filter: blur(6px);
+      background-size: cover;
+      }
+
+#myForm select { 
+width:150px; 
+height:30px}
+
+#myForm select:focus {
+width:auto; }
+
+.content{
+  max-width:650px;
+  margin-left: 80px;
+  margin-top: 70px;
+  
+}
+
+.sections{
+  margin: 10px;
+  padding: 15px;
+  background-color: #ABBAEA;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 150px;
+  padding-bottom: 40px;
+  line-height: 64px;
+  color: #222;
+  text-shadow: 0 0 100px #FFF;
+}
+h2 {
+  font-size: 50px;
+  line-height: 44px;
+  color: #222;
+  text-shadow: 0 0 100px #836953;
+}
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+
+p.thick {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #5C4033;
+  text-shadow: 0 0 100px #FFF;
+}
+
+p.after-header {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #5C4033;
+}
+
+p.normalbold {
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p.normal {
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600px;
+  padding: 15px 30px;
+  color: #222;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+button.normal:hover {
+  background-color: #CD7F32;
+  color: #fff;
+}
+body {
+  width: 100%;
+}

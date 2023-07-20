@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>
+    Readalot
+</title>
+{% endblock %}
+
+{% block body %}
+
+    <br class="content">
+    <img class="background" src="./Bookpic2.jpg" alt="Aleq">
+    
+        <!-- Book review page -->
+        <h1> Book</h1>
+        <h1> Review</h1>
+
+    <p class="thick" margin-top= "15px">Hi there! Thank you for using Readalot! </p>
+    
+    <!-- Review of the selected book goes here-->
+    <div class="sections" >
+    <h2>{{data.name}}</h2>
+    <p class="after-header">{{data.review}}</p>
+    <button class="normal" type="submit">This was helpful!<i class="fa fa-search"></i></button>
+    <button class="normal" type="submit">Not helpful<i class="fa fa-search"></i></button>
+    </div>
+    
+    </div>
+
+{% endblock %}

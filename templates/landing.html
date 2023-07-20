@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>
+    Readalot
+</title>
+<img class="background" src="./Bookpic2.jpg" alt="Did not work bro">
+{% endblock %}
+
+{% block body %}
+
+    <div class="content">
+    
+    
+        <!-- your content goes here -->
+        <h1> Readalot.com </h1>
+    <p class="thick" margin-top= "15px">Book review, summary and suggestions portal to help you find the best books for you</p>
+    
+    <!-- Book review portion -->
+    <div class="sections" >
+    <h2>Book review</h2>
+    <p class="after-header">Have a few books in mind? Here are a few unbiased review on the books of your choice</p>
+    <input type="text" class="input-field" placeholder="Enter book name">
+    <button class="normal" type="submit">Find Reviews<i class="fa fa-search"></i></button>
+    </div>
+    
+    <!-- Book summary portion -->
+    <div class="sections">
+    <h2>Book summary</h2>
+    <p class="after-header">Get a short summary of any books along with our suggestion on what you could expect to gain from the same</p>
+    <input type="text" class="input-field" placeholder="Enter book name">
+    <button class="normal" type="submit">Find Summary<i class="fa fa-search"></i></button>
+    </div>
+    
+    <!-- Book suggestion portion -->
+    <div class="sections">
+    <h2>Our suggestion</h2>
+    <p class="after-header">Wondering what to read next? Tell us a bit about yourself and we'll find the best books for you!</p>
+    <form action="">
+    
+    
+        <!-- Reading speed -->
+      <p class="normalbold">Pick how long you take to read a page:</p>
+      <div id=myForm>
+      <select name="speed" id="speed" style="max-width:100%;">
+        <option value="quick">3 minutes or less</option>
+        <option value="fast">5 minutes</option>
+        <option value="average">10 minutes</option>
+        <option value="slow">15 minutes</option>
+        <option value="vslow">more than 15 minutes</option>
+      </select>
+      </div>
+      <br><br>
+    
+        <!-- Size of book -->
+      <p class="normalbold">How long would you prefer the book to be:</p>
+      <div id=myForm>
+      <select name="length" id="length">
+        <option value="quick">50 Pages or less</option>
+        <option value="fast">upto 100 pages</option>
+        <option value="average">upto 200 pages</option>
+        <option value="slow">upto 400 pages</option>
+        <option value="vslow">upto 700 pages</option>
+        <option value="vslow">Length does not matter</option>
+      </select>
+      </div>
+      <br><br>
+    
+    
+        <!-- Book Type -->
+      <p class="normalbold">Pick the genre/types of books you would love to read</p>
+      <input type="checkbox" id="type1" name="type1" value="Biography/Autobiography">
+      <label for="type1">Biography/Autobiography</label><br>
+    
+      <input type="checkbox" id="type2" name="type2" value="History/Sociology">
+      <label for="type2">History</label><br>
+    
+      <input type="checkbox" id="type3" name="type3" value="Philosophy">
+      <label for="type3">Philosophy</label><br><br>
+    
+      <input type="checkbox" id="type4" name="type4" value="Science">
+      <label for="type4">Science</label><br>
+    
+      <input type="checkbox" id="type5" name="type5" value="History">
+      <label for="type5">History</label><br>
+    
+      <input type="checkbox" id="type6" name="type6" value="Economics">
+      <label for="type6">Economics</label><br><br>
+    
+      <input type="checkbox" id="type7" name="type7" value="Self Help">
+      <label for="type7">Self Help</label><br>
+    
+      <input type="checkbox" id="type8" name="type8" value="Entrepreneurship/Business">
+      <label for="type8">Entrepreneurship/Business</label><br>
+    
+      <input type="checkbox" id="type9" name="type9" value="Finance">
+      <label for="type9">Finance</label><br><br>
+    
+      <input type="checkbox" id="type10" name="type10" value="Romance">
+      <label for="type10">Romance</label><br>
+    
+      <input type="checkbox" id="type11" name="type11" value="Adventure">
+      <label for="type11">Adventure</label><br>
+    
+      <input type="checkbox" id="type12" name="type12" value="Feel good">
+      <label for="type12">Feel good</label><br><br>
+    
+    <button class="normal" type="submit">Suggest books!<i class="fa fa-search"></i></button>
+    </form>
+    </div>
+    
+    
+    </div>
+
+{% endblock %}
