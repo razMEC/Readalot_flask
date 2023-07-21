@@ -20,17 +20,32 @@
     <div class="sections" >
     <h2>Book review</h2>
     <p class="after-header">Have a few books in mind? Here are a few unbiased review on the books of your choice</p>
-    <input type="text" class="input-field" placeholder="Enter book name">
-    <button class="normal" type="submit">Find Reviews<i class="fa fa-search"></i></button>
-    </div>
+  
+    <form action="/review" method="post">
+    <input type="text" class="input-field" placeholder="Enter book name" name="name_book">
+    <input type="submit" class="input-field" placeholder="Enter book name" value="submit">
+    <!-- <button class="normal" type="submit">
+      <a href="{{ url_for('review') }}">
+        Find Review
+      </a>
+      <i class="fa fa-search"></i></button> -->
+    </form>
+  </div>
     
     <!-- Book summary portion -->
     <div class="sections">
     <h2>Book summary</h2>
     <p class="after-header">Get a short summary of any books along with our suggestion on what you could expect to gain from the same</p>
-    <input type="text" class="input-field" placeholder="Enter book name">
-    <button class="normal" type="submit">Find Summary<i class="fa fa-search"></i></button>
-    </div>
+    <form action="/summary" method="post">
+      <input type="text" class="input-field" placeholder="Enter book name" name="name_book">
+      <input type="submit" class="input-field" placeholder="Enter book name" value="submit">
+      <!-- <button class="normal" type="submit">
+        <a href="{{ url_for('review') }}">
+          Find Review
+        </a>
+        <i class="fa fa-search"></i></button> -->
+    </form>
+  </div>
     
     <!-- Book suggestion portion -->
     <div class="sections">
@@ -105,7 +120,7 @@
       <input type="checkbox" id="type12" name="type12" value="Feel good">
       <label for="type12">Feel good</label><br><br>
     
-    <button class="normal" type="submit">Suggest books!<i class="fa fa-search"></i></button>
+    <button class="normal" type="submit"><a href="{{ url_for('suggestions') }}">Suggest books</a><i class="fa fa-search"></i></button>
     </form>
     </div>
     
