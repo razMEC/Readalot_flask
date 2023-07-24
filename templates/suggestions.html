@@ -20,7 +20,89 @@
     <!-- Suggestions based on user interest-->
     <div class="sections" >
     <h2>Here are a few books you might like: </h2>
-    <p class="after-header">Lorem ipsum</p>
+    <p class="after-header">
+        <table border=1>
+
+                <tr>
+                    <th>
+                        Time taken to read one page
+                    </th>
+                    <td>
+                        {{reader_speed}} minutes
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Prefered Length of the book
+                    </th>
+                    <td>
+                        {{booklength_prefered}} pages
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Fields of interest
+                    </th>
+                    <td>
+                        {%for i in field_of_interest%}
+                            {{i}} 
+                        {%endfor%}
+                    </td>
+                </tr>
+        </table>
+    </p>
+    <div>
+        {%set iterations = [1]%}
+        {%for i in suggested_books%}
+        {%set temp_count = iterations.count(1)%}
+        <p class="after-header">Book {{temp_count}}</p>
+        <table border=1>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <td>
+                        {{i["name"]}} 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Author
+                    </th>
+                    <td>
+                        {{i["author"]}} 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Genre
+                    </th>
+                    <td>
+                        {{i["genre"]}} 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Rating
+                    </th>
+                    <td>
+                        {{i["rating"]}} 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        No. of pages
+                    </th>
+                    <td>
+                        {{i["no_pages"]}} 
+                    </td>
+                </tr>
+
+        </table>
+        {%set temp=iterations.append(1)%}
+
+        {%endfor%}
+    </div>
     <button class="normal" type="submit">This was helpful!<i class="fa fa-search"></i></button>
     <button class="normal" type="submit">Not helpful<i class="fa fa-search"></i></button>
     </div>
