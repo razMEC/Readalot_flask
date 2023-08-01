@@ -53,7 +53,7 @@
     </p>
     <div>
         {%set iterations = [1]%}
-        {%for i in suggested_books%}
+        {%for i in range(total_suggested_books)%}
         {%set temp_count = iterations.count(1)%}
         <p class="after-header">Book {{temp_count}}</p>
         <table border=1>
@@ -62,7 +62,7 @@
                         Name
                     </th>
                     <td>
-                        {{i["name"]}} 
+                        {{suggested_books_name[i]}} 
                     </td>
                 </tr>
                 <tr>
@@ -70,7 +70,7 @@
                         Author
                     </th>
                     <td>
-                        {{i["author"]}} 
+                        {{suggested_books_author[i]}} 
                     </td>
                 </tr>
                 <tr>
@@ -78,7 +78,7 @@
                         Genre
                     </th>
                     <td>
-                        {{i["genre"]}} 
+                        {{suggested_books_genre[i]}} 
                     </td>
                 </tr>
                 <tr>
@@ -86,7 +86,7 @@
                         Rating
                     </th>
                     <td>
-                        {{i["rating"]}} 
+                        {{suggested_books_rating[i]}} 
                     </td>
                 </tr>
                 <tr>
@@ -94,7 +94,7 @@
                         No. of pages
                     </th>
                     <td>
-                        {{i["no_pages"]}} 
+                        {{suggested_books_no_pages[i]}} 
                     </td>
                 </tr>
 
